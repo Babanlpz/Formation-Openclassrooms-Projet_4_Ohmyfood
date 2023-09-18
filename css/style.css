@@ -1,4 +1,9 @@
 /****** General ******/
+* { 
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --First-color: #99E2D0;
     --Second-color: #008766;
@@ -6,3 +11,4 @@
     --Fourth-color: #003A68;
     --Fifth-color: #9356DC;
 }
+
