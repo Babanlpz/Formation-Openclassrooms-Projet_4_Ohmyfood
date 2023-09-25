@@ -24,19 +24,20 @@
     
     <!-- Header -->
     <header class="page-header">
-      <nav>
-        <a href="#">Ohmyfood</a>
+      <nav class="nav__header">
+        <h1>ohmyfood</h1>
       </nav>
 
       <div class="main__location">
+        <i class="fa-solid fa-location-dot"></i>
         <p>Paris, Belleville</p>
         <!-- faire un input -->
       </div>
 
       <div class="main__description">
-        <h1 class="main__description__title">
+        <h2 class="main__description__title">
           Réservez le menu qui vous convient
-        </h1>
+        </h2>
         <p class="main__description__text">
           Découvrez des restaurants d'exeption, sélectionnés par nos soins.
         </p>
@@ -47,8 +48,8 @@
     </header>
 
     <!-- Main -->
-    <main>
-      <section class="section section--process main__process">
+    <main class="main">
+      <section class="main__process">
         <header class="section__header">
           <h2 class="section__title">Fonctionnement</h2>
         </header>
@@ -56,41 +57,36 @@
         <div class="section__content">
           <div tabindex="0" class="main__process__step">
             <p>Choisissez un restaurant</p>
-            <div>1</div>
+            <div class="main__number">1</div>
           </div>
           <div tabindex="0" class="main__process__step">
             <p>Composez votre menu</p>
-            <div>2</div>
+            <div class="main__number">2</div>
           </div>
           <div tabindex="0" class="main__process__step">
             <p>Dégustez au restaurant</p>
-            <div>3</div>
+            <div class="main__number">3</div>
           </div>
         </div>
       </section>
 
       <section id="restaurants"  class="section main__restaurant">
         <header class="section__header">
-          <h2 class="section__title">Restaurants</h2>
+          <h2 class="title__section">Restaurants</h2>
         </header>
 
         <div class="cards">
-          <article class="card">
             <a class="new" href="./pages/laPaletteDuGout.html">
               <figure>
                 <img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat sur plaque en céramique blanche"/>
               </figure>
               <div class="card__info">
                 <div class="card__column">
-                    <h3>La palette du goût</h3>
+                    <h3>La palette du goût<span class="card__info__heart"></span></h3>
                     <p>Ménilmontant</p>
-                </div>
-                <div class="card__column">
-                    <span>HEART</span>
                 </div>
               </div>
             </a>
-          </article>
 
           <a class="new" href="pages/laNoteEnchantée.html">
             <figure>
@@ -125,8 +121,8 @@
 
     <!-- Footer -->
 
-    <footer class="page-footer">
-      <a href="#">ohmyfood</a>
+    <footer class="footer">
+      <h2 class="footer__title">ohmyfood</h2>
       <ul class="footer__nav">
         <li>
           <a href="#">Proposer un restaurant</a>

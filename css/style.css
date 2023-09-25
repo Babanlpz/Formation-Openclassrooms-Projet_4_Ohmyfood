@@ -1,7 +1,8 @@
 /****** General ******/
-* { 
+*, ::before, ::after { 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -11,4 +12,447 @@
     --Fourth-color: #003A68;
     --Fifth-color: #9356DC;
 }
+
+html {
+    font-size: 16px;
+    font-family: "Robot", sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    font-size: clamp(1.8rem, 2vw, 2.5rem);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-weight: 500;
+}
+
+p {
+    font-weight: 500;
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+}
+
+a {
+    font-size: clamp(1.3rem, 2vw, 0.8rem);
+    text-decoration: none;
+    color: inherit;
+}
+    
+li {
+    list-style-type: none;
+}
+
+img {
+    -o-object-fit: cover;
+        object-fit: cover;
+    -o-object-position: center;
+        object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.new {
+    position: relative;
+}
+
+
+
+/****** Header ******/
+
+.nav__header {
+    display: flex;
+    font-family:'Shrikhand', 'sans-cerif';
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.591);
+            box-shadow: 0 3px 5px rgba(0,0,0, 0.591);
+    display: box;
+    display: flexbox;
+    box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 3,75rem;
+    width: 100%;
+}
+
+.fa-location-dot {
+    color: #353535;
+    width: 12px;
+    height: 16px;
+    margin-right: 0.9375rem;
+}
+
+.main__location {
+    height: 4.375rem;
+    background-color: #EAEAEA;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.main__description {
+    box-orient: vertical;
+    box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding: 3.125rem 1.25rem 3.75rem;
+    text-align: center;
+    background-color: #f6f6f6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.main__description__text {
+    margin: 0.9375rem 0 2.1875rem;
+    font-weight: 300;
+}
+
+.main__description__btn {
+    box-shadow: 0 2px 8px rgba(0, 0, 0 , 0.421);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+    padding: 1.25rem;
+    border: none;
+    border-radius: 1.875rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    background: gradient(linear, left top, left bottom, from(#FF79DA), color-stop(80%, #9356DC));
+    background: linear-gradient(top, #FF79DA, #9356DC 80%);
+    background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.main__description__btn:hover {
+    background-color: gradient(linear, left top, left bottom, from(#ff93e1), color-stop(80%, #a16be0));
+    background: -o-linear-gradient(top, #FF93e1, #a16be0 80%);
+    background: linear-gradient(to bottom, #ff93e1, #a16be0 80%)
+}
+
+.main__description__title {
+
+}
+
+/****** Main Process ******/
+
+.main__process {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    box-orient: vertical;
+    box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2.5rem 1.25rem;
+}
+
+.section__title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 1.5625rem;
+}
+
+.main__process__step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    box-orient: horizontal;
+    box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    position: relative;
+    width: 100%;
+    max-width: 43.1875rem;
+    margin-bottom: 1.5625rem;
+    padding: 0.9375rem 0.9375rem 0.9375rem 0;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    background-color: #f6f6f6;
+    transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+}
+
+.main__process__step p {
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+}
+
+.main__process__step:nth-child(1)::after {
+    content: "\f3cf";
+    font-family: "FontAwesome";
+    margin-left: 1.875rem;
+    margin-right: 0.625rem;
+    width: 1.875rem;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    color: rgba(0, 0, 0, 0.3882352941);
+    transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.main__process__step:nth-child(2)::after {
+    content: "\f03a";
+    font-family: "FontAwesome";
+    margin-left: 1.875rem;
+    margin-right: 0.625rem;
+    width: 1.875rem;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    color: rgba(0, 0, 0, 0.3882352941);
+    transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.main__process__step:nth-child(3)::after {
+    content: "\f54e";
+    font-family: "FontAwesome";
+    margin-left: 1.875rem;
+    margin-right: 0.625rem;
+    width: 1.875rem;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    color: rgba(0, 0, 0, 0.3882352941);
+    transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.main__process__step:hover {
+    background-color: #f2eafb;
+}
+
+.main__process__step:hover::after {
+    color: #9356DC;
+}
+
+.main__number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    left: -0.75rem;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 50%;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: white;
+    background-color: #9356DC;
+}
+
+/****** Main restaurant ******/
+
+.main__restaurant {
+    padding: 3.125rem 1.25rem 2.5rem;
+    background-color: #f6f6f6;
+}
+
+.title__section {
+    margin-bottom: 0.625rem;
+}
+
+.main__restaurant a {
+    width: 100%;
+    max-width: 40.625rem;
+    height: 18.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    margin: 1.25rem 0;
+    color: black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0 , 0.421);
+}
+
+.main__restaurant a figure {
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.main__restaurant a p {
+    font-weight: 300;
+}
+
+.cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0 3.125rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 125rem;
+}
+
+.card__info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-orient: vertical;
+    box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30%;
+    padding: 0.625rem 0.9375rem;
+}
+
+.card__info h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.card__info__heart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.card__info__heart::before {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.card__info__heart::after {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(80%, #9356DC));
+    background: -o-linear-gradient(top, #FF79DA, #9356DC 80%);
+    background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.card__info__heart:hover::before {
+    color: transparent;
+}
+
+.card__info__heart:hover::after {
+    font-weight: 900;
+    opacity: 1;
+}
+
+/****** Footer ******/
+
+.footer {
+    padding: 1.875rem 1.25rem;
+    color: white;
+    background-color: #333;
+}
+
+.footer__title {
+    margin-bottom: 1.25rem;
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+}
+
+.footer .footer__nav {
+    margin: 0.625rem;
+}
+
+.footer .footer__nav__item {
+    margin-bottom: 0.1875rem;
+}
+
+.footer .footer__nav__item:nth-child(1)::before {
+    content: "\f2e7";
+    font-family: "FontAwesome";
+    margin-right: 0.625rem;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+
+.footer .footer__nav__item:nth-child(2)::before {
+    content: "\f4c4";
+    font-family: "FontAwesome";
+    margin-right: 0.625rem;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+
+.footer .footer__nav__item a {
+    transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
+}
+
+.footer .footer__nav__item a:hover {
+    color: #a16be0;
+}
+
+
+
+
+
+
+
+
 
