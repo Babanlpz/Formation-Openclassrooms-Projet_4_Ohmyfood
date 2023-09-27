@@ -36,7 +36,7 @@ h4 {
 
 p {
     font-weight: 500;
-    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    font-size: 16px;
 }
 
 a {
@@ -281,9 +281,9 @@ img {
     transition: all 0.4s ease-in-out;
 }
 
-.main__process__step:hover {
+/* .main__process__step:hover {
     background-color: #f2eafb;
-}
+} */
 
 .main__process__step:hover:hover::after {
     color: #9356DC;
@@ -389,6 +389,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-bottom: 3px;
 }
 
 .card__info__heart {
@@ -476,12 +477,12 @@ img {
     font-size: clamp(1.3rem, 2vw, 1.7rem);
 }
 
-.footer .footer__nav__item a {
+.footer a {
     transition: color 0.4s ease-in-out;
     -o-transition: color 0.4s ease-in-out;
 }
 
-.footer .footer__nav__item a:hover {
+.footer a:hover {
     color: #a16be0;
 }
 
