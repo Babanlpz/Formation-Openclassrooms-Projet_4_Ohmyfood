@@ -1,0 +1,44 @@
+@import '../vendors/normalize.scss';
+
+@import '../utils/variables.scss';
+
+@import '../base/base.scss';
+
+@import '../components/button.scss';
+
+@import '../layouts/footer.scss';
+
+
+.section--fonctionnement {
+
+    .section__header{
+        width:calc(100% - 20px);
+
+
+        @media all and (min-width: 750px){
+            width:100%;
+        }
+
+        @media all and (min-width: 500px){
+            width:100%;
+        }
+    }
+
+    .section__content{
+        @media all and (min-width: 500px){
+
+        }
+    }
+}
+
+@media all and (min-width: 500px){
+    .section--fonctionnement {
+
+        .section__header{
+    
+        }
+
+        .section__content{
+        }
+    }
+}

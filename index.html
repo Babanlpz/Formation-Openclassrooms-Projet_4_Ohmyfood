@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Shrikhand&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <!-- <link rel="stylesheet" href="css/home.css"/> -->
 
     <script src="https://kit.fontawesome.com/7a7d62141a.js" crossorigin="anonymous"></script>
   </head>
@@ -26,7 +27,7 @@
     <!-- Header -->
     <header class="page-header">
       <nav class="nav__header">
-        <h1>ohmyfood</h1>
+        <a href="/">ohmyfood</a>
       </nav>
 
       <div class="main__location">
@@ -35,9 +36,9 @@
       </div>
 
       <div class="main__description">
-        <h2 class="main__description__title">
+        <h1 class="main__description__title">
           Réservez le menu qui vous convient
-        </h2>
+        </h1>
         <p class="main__description__text">
           Découvrez des restaurants d'exeption, sélectionnés par nos soins.
         </p>
@@ -72,10 +73,11 @@
 
       <section id="restaurants"  class="section main__restaurant">
         <header class="section__header">
-          <h2 class="title__section">Restaurants</h2>
+          <h2 tabindex="0" class="title__section">Restaurants</h2>
         </header>
 
         <div class="cards">
+          <article>
             <a class="new" href="./pages/laPaletteDuGout.html">
               <figure>
                 <img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat sur plaque en céramique blanche"/>
@@ -87,6 +89,7 @@
                 </div>
               </div>
             </a>
+          </article>
 
           <a class="new" href="pages/laNoteEnchantée.html">
             <figure>
@@ -122,7 +125,7 @@
     <!-- Footer -->
 
     <footer class="footer">
-      <h2 class="footer__title">ohmyfood</h2>
+      <a href="/" class="footer__title">ohmyfood</a>
       <ul class="footer__nav">
         <li class="footer__nav__item">
           <a href="#">Proposer un restaurant</a>
