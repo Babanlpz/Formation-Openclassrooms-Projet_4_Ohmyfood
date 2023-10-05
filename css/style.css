@@ -740,6 +740,7 @@ header .header__return::before {
     background: -o-linear-gradient(top, #FF79DA, #9356DC 80%);
     background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     cursor: pointer;
@@ -759,7 +760,7 @@ header .header__return::before {
     width: 100%;
 }
 
-.main__menu__starter h3, .main__menu__dish h3, .main__menu__dessert h3 {
+.main__menu__starter h2, .main__menu__dish h2, .main__menu__dessert h2 {
     position: relative;
     margin-bottom: 1.875rem;
     padding-left: 0.625rem;
@@ -767,7 +768,7 @@ header .header__return::before {
     text-transform: uppercase;
 }
  
-.main__menu__starter h3::before, .main__menu__dish h3::before, .main__menu__dessert h3::before {
+.main__menu__starter h2::before, .main__menu__dish h2::before, .main__menu__dessert h2::before {
     content: "";
     position: absolute;
     bottom: -0.625rem;
@@ -862,7 +863,64 @@ header .header__return::before {
     font-size: clamp(1.1rem, 2vw, 1.5rem);
 }
 
+.meal__price {
+    font-weight: 500;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    margin-left: auto;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0.625rem 1.5625rem 0.625rem 0.3125rem;
+}
 
+.meal__check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: -65px;
+    width: 65px;
+    padding: 0 0.9375rem;
+    background-color: #99E2D0;
+    -webkit-transition: margin-right 0.4s ease-in-out;
+    -o-transition: margin-right 0.4s ease-in-out;
+    transition: margin-right 0.4s ease-in-out;
+}
+
+.meal__check::after {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    padding: 0.3125rem;
+    border-radius: 50%;
+    color: #99E2D0;
+    font-size: 0.9375rem;
+    background-color: #fff;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.meal:hover .meal__check {
+    margin-right: O;
+}
+
+.meal:hover .meal__check::after {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
 
 
 
