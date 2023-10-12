@@ -341,7 +341,8 @@ img {
 .main__description__btn:hover {
     background-color: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), color-stop(80%, #a16be0));
     background: -o-linear-gradient(top, #FF93e1, #a16be0 80%);
-    background: linear-gradient(to bottom, #ff93e1, #a16be0 80%)
+    background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
+    text-decoration: underline;
 }
 
 
@@ -450,6 +451,10 @@ img {
 } */
 
 .main__process__step:hover:hover::after {
+    color: #9356DC;
+}
+
+.main__process__step:nth-child(3)::after {
     color: #9356DC;
 }
 
@@ -650,6 +655,9 @@ img {
     color: #a16be0;
 }
 
+.footer a:hover {
+    text-decoration: underline;
+}
 
 /****** Pages secondaires ******/
 
