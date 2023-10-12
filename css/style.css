@@ -21,8 +21,9 @@ html {
 }
 
 h1, h2 {
-    font-size: clamp(1.8rem, 2vw, 2.5rem);
-    font-weight: 500;
+    font-size: clamp(24.0px, NaNpx + NaNvw, 24.00px);
+    /**
+    font-weight: 500; **/
 }
 
 h3 {
@@ -83,7 +84,9 @@ img {
     background-color: #99E2D0;
 }
 
-.title {
+
+.title{
+    width: 100%;
     font-family: Shrikhand;
     font-size: 30px;
     font-style: italic;
@@ -92,6 +95,7 @@ img {
     letter-spacing: 0em;
     text-align: center;
 }
+
 
 /****** Loader ******/
 
@@ -111,16 +115,16 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-animation: visibility 1s ease forwards;
-             animation: visibility 1s ease forwards;
+    -webkit-animation: visibility 2s ease forwards;
+             animation: visibility 2s ease forwards;
 }
 
 .loader__txt {
-    font-size: 30px;
+    font-size: 26px;
     letter-spacing: 1px;
     color: #ffffff;
-    -webkit-animation: text 0,5s linear infinite;
-            animation: text 0,5s linear infinite;
+    -webkit-animation: text 2s linear infinite;
+            animation: text 2s linear infinite;
 }
 
 .loader__ring {
@@ -130,7 +134,7 @@ img {
     border-radius: 50%;
 }
 
-.loading__ring::after {
+.loader__ring::after {
     content: "";
     position: absolute;
     top: 0;
@@ -139,8 +143,8 @@ img {
     right: 0;
     border-radius: 50%;
     border: 10px solid transparent;
-    -webkit-animaation: rotate 0,5s linear infinite;
-            animation: rotate 0,5s linear infinite;
+    -webkit-animaation: rotate 4s linear infinite;
+            animation: rotate 4s linear infinite;
 }
 
 @-webkit-keyframes rotate {
@@ -243,7 +247,6 @@ img {
 
 
 /****** Header ******/
-
 .nav__header {
     height: 3,75rem;
     width: 100%;
@@ -361,9 +364,12 @@ img {
     padding: 2.5rem 1.25rem;
 }
 
-.section__title {
+.section__header {
     -ms-flex-item-align: start;
         align-self: flex-start;
+}
+
+.section__title {
     margin-bottom: 1.5625rem;
 }
 
@@ -648,11 +654,23 @@ img {
 /****** Pages secondaires ******/
 
 header {
+    display: flex;
     position: relative;
+    height: 3,75rem;
+}
+
+.header__return {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    left: 5%;
 }
 
 header .header__return::before {
+    /**
     content: "\f060";
+    **/
     font-family: "FontAwesome";
     color: #333;
     font-size: clamp(1,5rem, 2vw, 2rem);
@@ -702,7 +720,7 @@ header .header__return::before {
     padding: 1.25rem;
     width: 100%;
     border-radius: 1.875rem 1.875rem 0 0;
-    font-size: clamp(1.5rem, 2.5vw, 2.rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     background-color: white;
 }
 
@@ -752,7 +770,7 @@ header .header__return::before {
 
 .main__menu .heart:hover::after {
     font-weight: 900;
-    opacity: 0;
+    opacity: 1;
 }
 
 .main__menu__starter, .main__menu__dish, .main__menu__dessert {
@@ -913,7 +931,7 @@ header .header__return::before {
 }
 
 .meal:hover .meal__check {
-    margin-right: O;
+    margin-right: 0;
 }
 
 .meal:hover .meal__check::after {
@@ -923,6 +941,23 @@ header .header__return::before {
 }
 
 
+
+/**
+- Taille de polices
+- positionnement des titres de sections (fonctionnement)
+- fonctionnement, la couleur du 3eme items
+- temps transition sur les boutons
+- hover sur liens de footer, mettre text-decoration:underline
+- media queries ordinateurs
+
+- animations flèches retour de restaurant
+- ellips sur titre des menu restaurant
+- enlever sur l'animations commander le box-shadow (voir le prototype)
+- media queries ordinateurs
+
+- animations lors du chargement de la page
+
+**/
 
 
 
