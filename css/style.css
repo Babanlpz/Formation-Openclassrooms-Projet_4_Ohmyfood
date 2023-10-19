@@ -21,7 +21,7 @@ html {
 }
 
 h1, h2 {
-    font-size: clamp(24.0px, NaNpx + NaNvw, 24.00px);
+    font-size: clamp(24px, NaNpx + NaNvw, 24px);
     /**
     font-weight: 500; **/
 }
@@ -85,7 +85,7 @@ img {
 }
 
 
-.title{
+.title { 
     width: 100%;
     font-family: Shrikhand;
     font-size: 30px;
@@ -248,10 +248,12 @@ img {
 
 /****** Header ******/
 .nav__header {
-    height: 3,75rem;
+    height: 63px;
     width: 100%;
+    /**
     -webkit-box-shadow: 0 3px 5px rgba(0,0,0, 0.591);
             box-shadow: 0 3px 5px rgba(0,0,0, 0.591);
+            **/
     display: -webit-box;
     display: -ms-flexbox;
     display: flex;
@@ -374,6 +376,10 @@ img {
     margin-bottom: 1.5625rem;
 }
 
+.section__content {
+    width: 100%;
+}
+
 .main__process__step {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -417,7 +423,7 @@ img {
     color: rgba(0, 0, 0, 0.3882352941);
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4 ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .main__process__step:nth-child(2)::after {
@@ -485,8 +491,12 @@ img {
     background-color: #f6f6f6;
 }
 
-.title__section {
+.title__restaurant {
     margin-bottom: 0.625rem;
+}
+
+.section__restaurant {
+    align-self: flex-start;
 }
 
 .main__restaurant a {
@@ -517,7 +527,7 @@ img {
     font-weight: 300;
 }
 
-.cards {
+.section__cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -531,6 +541,30 @@ img {
     width: 100%;
     max-width: 125rem;
 }
+
+
+.main__restaurant {
+    flex-wrap: wrap;
+    gap: 0 3.125rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1350px;
+}
+
+.cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0 3.125rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 125rem;
+} 
 
 .card__info {
     position: relative;
@@ -663,8 +697,9 @@ img {
 
 header {
     display: flex;
+    align-items: center;
     position: relative;
-    height: 3,75rem;
+    height: 60px;
 }
 
 .header__return {
@@ -681,7 +716,7 @@ header .header__return::before {
     **/
     font-family: "FontAwesome";
     color: #333;
-    font-size: clamp(1,5rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
     position: absolute;
     left: 0;
     -webkit-transform: translateY(-50%);
@@ -951,11 +986,11 @@ header .header__return::before {
 
 
 /**
-- Taille de polices
-- positionnement des titres de sections (fonctionnement)
-- fonctionnement, la couleur du 3eme items
+- Taille de polices ok
+- positionnement des titres de sections (fonctionnement) ok
+- fonctionnement, la couleur du 3eme items ok
 - temps transition sur les boutons
-- hover sur liens de footer, mettre text-decoration:underline
+- hover sur liens de footer, mettre text-decoration:underline ok
 - media queries ordinateurs
 
 - animations flèches retour de restaurant
@@ -969,3 +1004,96 @@ header .header__return::before {
 
 
 
+/****** Breakpoints ******/
+ 
+@media (min-width: 1024px) {
+   .header {
+    display: flex;
+    align-items: center;
+    height: 96px;
+     width: 100%;
+   }
+
+   header img {
+     width: auto;
+     width: 15.625rem;
+   }
+
+   .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   /****** Main ******/
+   .main__process {
+     margin: 0 auto;
+     padding-left: 80px;
+     padding-right: 80px;
+      max-width: 1350px;
+   }
+
+   .section__content {
+     display: flex;
+     gap: 25px; 
+     border-radius: 20px;
+   }
+   .section__cards {
+    display: flex;
+   }
+   .cards {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: calc(50% - 40px);
+     max-width: 1350px;
+   }
+
+   /*** Footer ***/
+
+   .footer  {
+    display: flex;
+     flex-direction: row-reverse;
+     justify-content: end;
+     gap: 16px;
+     padding-right: 3rem;
+     width: 100%;
+     height: 114px;
+     padding: 30px 25px 30px 25px;
+   }
+
+   .footer__title {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      padding: 50px 25px 30px 50px;
+   }
+
+   .footer .footer__nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 2rem;
+    padding-bottom: 0;
+   }
+
+   /*** Pages secondaires ***/
+   .main__menu__title {
+    justify-content: center;
+    margin: 0 auto;
+    gap: 3rem;
+    background: #f6f6f6;
+   }
+
+   .main__menu {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-left: 95px;
+    padding-right: 95px;
+   }
+
+   .main__menu__dessert, .main__menu__dish, .main__menu__starter {
+    background: #f6f6f6;
+   }
+}
