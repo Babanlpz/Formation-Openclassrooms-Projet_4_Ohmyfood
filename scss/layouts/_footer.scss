@@ -1,0 +1,48 @@
+/****** Footer ******/
+
+.footer {
+    padding: 1.875rem 1.25rem;
+    color: white;
+    background-color: #333;
+}
+
+.footer__title {
+    margin-bottom: 1.25rem;
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+}
+
+.footer .footer__nav {
+    margin: 0.625rem 0;
+}
+
+.footer .footer__nav__item {
+    margin-bottom: 0.1875rem;
+}
+
+.footer .footer__nav__item:nth-child(1)::before {
+    content: "\f2e7";
+    font-family: "FontAwesome";
+    margin-right: 0.625rem;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+
+.footer .footer__nav__item:nth-child(2)::before {
+    content: "\f4c4";
+    font-family: "FontAwesome";
+    margin-right: 0.625rem;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+
+.footer a {
+    transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
+}
+
+.footer a:hover {
+    color: #a16be0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

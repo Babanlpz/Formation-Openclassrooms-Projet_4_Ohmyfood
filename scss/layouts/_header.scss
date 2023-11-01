@@ -1,0 +1,60 @@
+/****** Header ******/
+.nav__header {
+    height: 63px;
+    width: 100%;
+    /**
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0, 0.591);
+            box-shadow: 0 3px 5px rgba(0,0,0, 0.591);
+            **/
+    display: -webit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
+}
+
+.nav__header img {
+    width: 10.625rem;
+    height: auto;
+}
+
+/****** Pages secondaires ******/
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 60px;
+}
+
+.header__return {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    left: 5%;
+}
+
+header .header__return::before {
+    /**
+    content: "\f060";
+    **/
+    font-family: "FontAwesome";
+    color: #333;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    position: absolute;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 5%;   
+}
+
+.main__banner {
+    max-height: 55vh;
+    min-height: 30vh;
+}
