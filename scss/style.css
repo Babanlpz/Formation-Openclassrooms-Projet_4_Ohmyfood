@@ -1,17 +1,10 @@
 @charset "UTF-8";
+/*** Variables ***/
 /****** General ******/
 *, ::before, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --First-color: #99E2D0;
-  --Second-color: #008766;
-  --Third-color: #89C8FA;
-  --Fourth-color: #003A68;
-  --Fifth-color: #9356DC;
 }
 
 html {
@@ -21,7 +14,7 @@ html {
 }
 
 h1, h2 {
-  font-size: clamp(24px, NaNpx + NaNvw, 24px);
+  font-size: 30px;
   /**
   font-weight: 500; **/
 }
@@ -62,7 +55,6 @@ img {
 .new {
   position: relative;
 }
-
 .new::before {
   content: "Nouveau";
   position: absolute;
@@ -74,7 +66,7 @@ img {
   border-radius: 0.3125rem;
   padding: 0.625rem 0.9375rem;
   font-weight: 500;
-  color: #278870;
+  color: #008766;
   background-color: #99E2D0;
 }
 
@@ -102,21 +94,18 @@ img {
   align-items: center;
   animation: visibility 2s ease forwards;
 }
-
 .loader__txt {
   font-size: 26px;
   letter-spacing: 1px;
   color: #ffffff;
   animation: text 2s linear infinite;
 }
-
 .loader__ring {
   position: absolute;
   width: 210px;
   height: 210px;
   border-radius: 50%;
 }
-
 .loader__ring::after {
   content: "";
   position: absolute;
@@ -129,6 +118,7 @@ img {
   -webkit-animaation: rotate 4s linear infinite;
   animation: rotate 4s linear infinite;
 }
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -179,7 +169,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .nav__header img {
   width: 10.625rem;
   height: auto;
@@ -199,7 +188,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .main__location p::before {
   content: "\f3c5";
   font-family: "FontAwesome";
@@ -215,16 +203,13 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .main__description__title {
   animation: fillFromRight 3s ease-in-out forwards;
 }
-
 .main__description__text {
   margin: 0.9375rem 0 2.1875rem;
   font-weight: 300;
 }
-
 .main__description__btn {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
   padding: 1.25rem;
@@ -238,10 +223,9 @@ img {
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   transition: all 0.4s ease-in-out;
 }
-
 .main__description__btn:hover {
-  background-color: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), color-stop(80%, #a16be0));
-  background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
+  background-color: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(80%, #a16be0));
+  background: linear-gradient(to bottom, #FF79DA, #a16be0 80%);
   text-decoration: underline;
 }
 
@@ -283,13 +267,11 @@ img {
   transition: all 0.4s ease-in-out;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
 }
-
 .main__process__step p {
   font-size: 19px;
   width: 211px;
   height: 15px;
 }
-
 .main__process__step:nth-child(1)::after {
   content: "\f3cf";
   font-family: "FontAwesome";
@@ -301,7 +283,6 @@ img {
   color: rgba(0, 0, 0, 0.3882352941);
   transition: all 0.4s ease-in-out;
 }
-
 .main__process__step:nth-child(2)::after {
   content: "\f03a";
   font-family: "FontAwesome";
@@ -313,7 +294,6 @@ img {
   color: rgba(0, 0, 0, 0.3882352941);
   transition: all 0.4s ease-in-out;
 }
-
 .main__process__step:nth-child(3)::after {
   content: "\f54e";
   font-family: "FontAwesome";
@@ -325,18 +305,16 @@ img {
   color: rgba(0, 0, 0, 0.3882352941);
   transition: all 0.4s ease-in-out;
 }
-
-/* .main__process__step:hover {
-    background-color: #f2eafb;
-} */
 .main__process__step:hover:hover::after {
   color: #9356DC;
 }
-
 .main__process__step:nth-child(3)::after {
   color: #9356DC;
 }
 
+/* .main__process__step:hover {
+    background-color: #f2eafb;
+} */
 .main__number {
   display: flex;
   justify-content: center;
@@ -361,15 +339,6 @@ img {
   padding: 3.125rem 1.25rem 2.5rem;
   background-color: #f6f6f6;
 }
-
-.title__restaurant {
-  margin-bottom: 0.625rem;
-}
-
-.section__restaurant {
-  align-self: flex-start;
-}
-
 .main__restaurant a {
   width: 100%;
   max-width: 40.625rem;
@@ -380,7 +349,6 @@ img {
   color: black;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
 }
-
 .main__restaurant a figure {
   height: 70%;
   display: flex;
@@ -388,9 +356,16 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .main__restaurant a p {
   font-weight: 300;
+}
+
+.title__restaurant {
+  margin-bottom: 0.625rem;
+}
+
+.section__restaurant {
+  align-self: flex-start;
 }
 
 .section__cards {
@@ -429,14 +404,12 @@ img {
   height: 30%;
   padding: 0.625rem 0.9375rem;
 }
-
 .card__info h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 3px;
 }
-
 .card__info__heart {
   display: flex;
   justify-content: center;
@@ -444,15 +417,13 @@ img {
   width: 1.875rem;
   height: 1.875rem;
 }
-
-.card__info__heart::before {
+.card__info::before {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
   transition: all 0.8s ease-in-out;
 }
-
-.card__info__heart::after {
+.card__info::after {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
@@ -465,62 +436,60 @@ img {
   opacity: 0;
   cursor: pointer;
 }
-
-.card__info__heart:hover::before {
+.card__info:hover::before {
   color: transparent;
 }
-
-.card__info__heart:hover::after {
+.card__info:hover::after {
   font-weight: 900;
   opacity: 1;
 }
 
 /****** Footer ******/
 .footer {
-  padding: 1.875rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 22px 25px;
   color: white;
   background-color: #333;
 }
-
 .footer__title {
-  margin-bottom: 1.25rem;
   font-family: "Shrikhand", cursive;
+  text-decoration: none;
   font-weight: 400;
 }
-
-.footer .footer__nav {
-  margin: 0.625rem 0;
+.footer__list {
+  display: flex;
+  gap: 10px;
 }
-
-.footer .footer__nav__item {
-  margin-bottom: 0.1875rem;
-}
-
-.footer .footer__nav__item:nth-child(1)::before {
+.footer__list:nth-child(1)::before {
   content: "\f2e7";
   font-family: "FontAwesome";
-  margin-right: 0.625rem;
-  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  margin-top: 4px;
+  font-size: 13px;
+  width: 10px;
 }
-
-.footer .footer__nav__item:nth-child(2)::before {
+.footer__list:nth-child(2)::before {
   content: "\f4c4";
   font-family: "FontAwesome";
-  margin-right: 0.625rem;
-  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  margin-top: 4px;
+  font-size: 13px;
+  width: 10px;
 }
-
 .footer a {
   transition: color 0.4s ease-in-out;
   -o-transition: color 0.4s ease-in-out;
 }
-
 .footer a:hover {
   color: #a16be0;
+  text-decoration: underline;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.footer .container-full {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style-type: none;
 }
 
 /****** Pages secondaires ******/
@@ -530,16 +499,14 @@ header {
   position: relative;
   height: 60px;
 }
-
-.header__return {
+header__return {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 5px;
   left: 5%;
 }
-
-header .header__return::before {
+header::before {
   /**
   content: "\f060";
   **/
@@ -566,7 +533,6 @@ header .header__return::before {
   position: relative;
   top: -50px;
 }
-
 .main__menu__title {
   display: flex;
   align-items: center;
@@ -579,23 +545,20 @@ header .header__return::before {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   background-color: white;
 }
-
-.main__menu .heart {
+.main__menuheart {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1.875rem;
   height: 1.875rem;
 }
-
-.main__menu .heart::before {
+.main__menuheart::before {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
   transition: all 0.8s ease-in-out;
 }
-
-.main__menu .heart::after {
+.main__menuheart::after {
   content: "\f004";
   font-family: "Font Awesome 5 Free";
   position: absolute;
@@ -607,12 +570,10 @@ header .header__return::before {
   opacity: 0;
   cursor: pointer;
 }
-
-.main__menu .heart:hover::before {
+.main__menuheart:hover::before {
   color: transparent;
 }
-
-.main__menu .heart:hover::after {
+.main__menuheart:hover::after {
   font-weight: 900;
   opacity: 1;
 }
@@ -681,10 +642,12 @@ header .header__return::before {
   padding: 0.9375rem 2.5rem;
   margin: 0 auto;
 }
-
 .main__menu__btn:hover {
+  /***
   box-shadow: 5px 5px 5px black;
-  background: linear-gradient(to bottom, #FF79DA, #a16be0 80%);
+  ***/
+  background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  text-decoration: underline;
 }
 
 .meal {
@@ -696,20 +659,16 @@ header .header__return::before {
   overflow: hidden;
   animation: appear 1s both;
 }
-
 .meal:nth-child(2) {
   animation-delay: 200ms;
 }
-
-.meal:nth-child(3) {
+.meal :nth-child(3) {
   animation-delay: 200ms;
 }
-
-.meal:nth-child(4) {
+.meal :nth-child(4) {
   animation-delay: 200ms;
 }
-
-.meal:nth-child(5) {
+.meal :nth-child(5) {
   animation-delay: 200ms;
 }
 
@@ -719,13 +678,11 @@ header .header__return::before {
   text-overflow: ellipsis;
   padding: 0.625rem;
 }
-
 .meal__description h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: clamp(1.4rem, 2vw, 1.9rem);
 }
-
 .meal__description p {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -753,7 +710,6 @@ header .header__return::before {
   background-color: #99E2D0;
   transition: margin-right 0.4s ease-in-out;
 }
-
 .meal__check::after {
   content: "\f00c";
   font-family: "FontAwesome";
@@ -774,20 +730,10 @@ header .header__return::before {
 }
 
 /**
-- Taille de polices ok
-- positionnement des titres de sections (fonctionnement) ok
-- fonctionnement, la couleur du 3eme items ok
 - temps transition sur les boutons
-- hover sur liens de footer, mettre text-decoration:underline ok
-- media queries ordinateurs
-
 - animations flèches retour de restaurant
 - ellips sur titre des menu restaurant
 - enlever sur l'animations commander le box-shadow (voir le prototype)
-- media queries ordinateurs
-
-- animations lors du chargement de la page
-
 **/
 /****** Breakpoints ******/
 @media (min-width: 1024px) {
@@ -834,28 +780,19 @@ header .header__return::before {
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: end;
-    gap: 16px;
-    padding-right: 3rem;
-    width: 100%;
-    height: 114px;
-    padding: 30px 25px 30px 25px;
-  }
-  .footer__title {
-    display: flex;
+    padding: 60px 25px 30px 10px;
     align-items: center;
-    font-size: 20px;
-    padding: 50px 25px 30px 50px;
   }
-  .footer .footer__nav {
+  .footer .container-full {
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    gap: 2rem;
-    padding-bottom: 0;
+    gap: 16px;
   }
-  .footer__nav__item {
-    height: 19px;
+  .footer .footer__title {
+    margin-left: 50px;
+  }
+  .footer .responsive-space {
+    margin-right: 25px;
   }
   /*** Pages secondaires ***/
   .main__pal {
@@ -867,6 +804,7 @@ header .header__return::before {
     max-width: 1054px;
     height: 100%;
     margin: 0 auto;
+    margin-bottom: -49px;
   }
   .main__menu__title {
     justify-content: center;
@@ -877,7 +815,6 @@ header .header__return::before {
   }
   .main__menu {
     max-width: 1250px;
-    margin: 0 auto;
     padding-bottom: 2rem;
     padding-left: 201px;
     padding-right: 201px;
@@ -889,4 +826,4 @@ header .header__return::before {
   .background__menu {
     background-color: white;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
