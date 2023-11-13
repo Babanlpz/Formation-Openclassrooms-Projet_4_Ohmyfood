@@ -178,6 +178,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1s ease-out forwards;
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .nav__header img {
@@ -198,6 +208,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.4s ease-out forwards;
 }
 
 .main__location p::before {
@@ -214,6 +227,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.8s ease-out forwards;
 }
 
 .main__description__title {
@@ -260,10 +276,16 @@ img {
 
 .section__title {
   margin-bottom: 1.5625rem;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 2s ease-out forwards;
 }
 
 .section__content {
   width: 100%;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 2.2s ease-out forwards;
 }
 
 .main__process__step {
@@ -360,6 +382,9 @@ img {
 .main__restaurant {
   padding: 3.125rem 1.25rem 2.5rem;
   background-color: #f6f6f6;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 2.6s ease-out forwards;
 }
 
 .title__restaurant {
@@ -483,6 +508,9 @@ img {
   padding: 22px 25px;
   color: white;
   background-color: #333;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 2.8s ease-out forwards;
 }
 
 .footer__title {
@@ -538,6 +566,9 @@ header {
   align-items: center;
   position: relative;
   height: 60px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1s ease-out forwards;
 }
 
 .header__return {
@@ -564,6 +595,9 @@ header .header__return::before {
 .main__banner {
   max-height: 55vh;
   min-height: 30vh;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.6s ease-out forwards;
 }
 
 .main__menu {
@@ -587,6 +621,9 @@ header .header__return::before {
   border-radius: 1.875rem 1.875rem 0 0;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   background-color: white;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 2s ease-out forwards;
 }
 
 .main__menu .heart {
@@ -641,13 +678,13 @@ header .header__return::before {
 .main__menu__dish {
   padding: 0.625rem 1.25rem 2.5rem;
   width: 100%;
-  animation: fillFromRight 3s ease-in-out 0.5s forwards;
+  animation: fillFromRight 3s ease-in-out forwards;
 }
 
 .main__menu__dessert {
   padding: 0.625rem 1.25rem 2.5rem;
   width: 100%;
-  animation: fillFromRight 3s ease-in-out 1s forwards;
+  animation: fillFromRight 3s ease-in-out forwards;
 }
 
 .main__menu__starter h2, .main__menu__dish h2, .main__menu__dessert h2 {
@@ -893,5 +930,8 @@ header .header__return::before {
   }
   .background__menu {
     background-color: white;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 2s ease-out forwards;
   }
 }/*# sourceMappingURL=style.css.map */
