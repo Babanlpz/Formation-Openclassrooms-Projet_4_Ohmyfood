@@ -20,28 +20,16 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2 {
-  font-size: clamp(24px, NaNpx + NaNvw, 24px);
-  /**
-  font-weight: 500; **/
-}
-
-h3 {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
-  font-weight: 500;
+h1 {
+  font-size: 40px;
+  font-weight: 700;
 }
 
 h4 {
   font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-p {
-  font-weight: 500;
-  font-size: 16px;
-}
-
 a {
-  font-size: clamp(1.3rem, 2vw, 0.8rem);
   text-decoration: none;
   color: inherit;
 }
@@ -211,6 +199,7 @@ img {
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 0.4s 1.4s ease-out forwards;
+  font-weight: 500;
 }
 
 .main__location p::before {
@@ -238,6 +227,7 @@ img {
 
 .main__description__text {
   margin: 0.9375rem 0 2.1875rem;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -249,8 +239,8 @@ img {
   letter-spacing: 1px;
   cursor: pointer;
   color: white;
-  font-weight: 400;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 500;
+  font-size: 16px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   transition: all 0.4s ease-in-out;
 }
@@ -258,7 +248,6 @@ img {
 .main__description__btn:hover {
   background-color: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), color-stop(80%, #a16be0));
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
-  text-decoration: underline;
 }
 
 /****** Main Process ******/
@@ -279,6 +268,8 @@ img {
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 0.4s 2s ease-out forwards;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .section__content {
@@ -307,7 +298,8 @@ img {
 }
 
 .main__process__step p {
-  font-size: 19px;
+  font-size: 16px;
+  font-weight: 500;
   width: 211px;
   height: 15px;
 }
@@ -387,6 +379,11 @@ img {
   animation: apparition 0.4s 2.6s ease-out forwards;
 }
 
+.title__section {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .title__restaurant {
   margin-bottom: 0.625rem;
 }
@@ -455,11 +452,19 @@ img {
   padding: 0.625rem 0.9375rem;
 }
 
+
 .card__info h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 3px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card__info p {
+  font-size: 17px;
+  font-weight: 300;
 }
 
 .card__info__heart {
@@ -517,11 +522,20 @@ img {
   font-family: "Shrikhand", cursive;
   text-decoration: none;
   font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
 }
 
 .footer__list {
   display: flex;
+  font-size: 16px;
+  font-weight: 500;
   gap: 10px;
+}
+
+.footer__li {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .footer .container-full{
@@ -769,22 +783,25 @@ header .header__return::before {
   padding: 0.625rem;
 }
 
-.meal__description h4 {
+.meal__description h3 {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: clamp(1.4rem, 2vw, 1.9rem);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
 }
 
 .meal__description p {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 200;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-size: 15px;
+  padding-left: 6px;
 }
 
 .meal__price {
   font-weight: 500;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: 15px;
   margin-left: auto;
   flex-shrink: 0;
   display: flex;
