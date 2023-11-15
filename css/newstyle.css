@@ -473,6 +473,7 @@ img {
   align-items: center;
   width: 1.875rem;
   height: 1.875rem;
+  font-weight: normal;
 }
 
 .card__info__heart::before {

@@ -1,48 +1,66 @@
 /****** Footer ******/
-
 .footer {
-    padding: 1.875rem 1.25rem;
-    color: white;
-    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  padding: 22px 25px;
+  color: white;
+  background-color: #333;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 2.8s ease-out forwards;
+
+    &__li {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &__title {
+        font-family: "Shrikhand", cursive;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        font-style: italic;
+      }
+
+        &__list {
+            display: flex;
+            font-size: 16px;
+            font-weight: 500;
+            gap: 10px;
+
+                &:nth-child(1)::before {
+                    content: "\f2e7";
+                    font-family: "FontAwesome";
+                    margin-top: 4px;
+                    font-size: 13px;
+                    width: 10px;
+                  }
+
+                  &:nth-child(2)::before {
+                    content: "\f4c4";
+                    font-family: "FontAwesome";
+                    margin-top: 4px;
+                    font-size: 13px;
+                    width: 10px; 
+                  }
+          }
+
+          a {
+            transition: color 0.4s ease-in-out;
+            -o-transition: color 0.4s ease-in-out;
+          }
+
+          a:hover {
+            color: #a16be0;
+            text-decoration: underline;
+          }
+          
 }
 
-.footer__title {
-    margin-bottom: 1.25rem;
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-}
-
-.footer .footer__nav {
-    margin: 0.625rem 0;
-}
-
-.footer .footer__nav__item {
-    margin-bottom: 0.1875rem;
-}
-
-.footer .footer__nav__item:nth-child(1)::before {
-    content: "\f2e7";
-    font-family: "FontAwesome";
-    margin-right: 0.625rem;
-    font-size: clamp(1.3rem, 2vw, 1.7rem);
-}
-
-.footer .footer__nav__item:nth-child(2)::before {
-    content: "\f4c4";
-    font-family: "FontAwesome";
-    margin-right: 0.625rem;
-    font-size: clamp(1.3rem, 2vw, 1.7rem);
-}
-
-.footer a {
-    transition: color 0.4s ease-in-out;
-    -o-transition: color 0.4s ease-in-out;
-}
-
-.footer a:hover {
-    color: #a16be0;
-}
-
-.footer a:hover {
-    text-decoration: underline;
+.footer .container-full{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style-type: none;
 }

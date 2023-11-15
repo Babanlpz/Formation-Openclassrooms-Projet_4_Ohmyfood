@@ -1,4 +1,5 @@
-/****** Header ******/
+/*** Header page principal ***/
+
 .nav__header {
     height: 63px;
     width: 100%;
@@ -7,54 +8,128 @@
             box-shadow: 0 3px 5px rgba(0,0,0, 0.591);
             **/
     display: -webit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; 
-}
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 1s ease-out forwards;
+  
+      img {
+          width: 10.625rem;
+          height: auto;
+      }
+  }
+  
+  @keyframes apparition {
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
 
-.nav__header img {
-    width: 10.625rem;
-    height: auto;
-}
+/*** Header pages secondaires ***/
 
-/****** Pages secondaires ******/
-
-header {
+  header {
     display: flex;
     align-items: center;
     position: relative;
     height: 60px;
-}
-
-.header__return {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 5px;
-    left: 5%;
-}
-
-header .header__return::before {
-    /**
-    content: "\f060";
-    **/
-    font-family: "FontAwesome";
-    color: #333;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    position: absolute;
-    left: 0;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 5%;   
-}
-
-.main__banner {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 1s ease-out forwards;
+  
+      &__return {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 5px;
+          left: 5%;
+        }
+  
+        &::before {
+          /**
+          content: "\f060";
+          **/
+          font-family: "FontAwesome";
+          color: #333;
+          font-size: clamp(1.5rem, 2vw, 2rem);
+          position: absolute;
+          left: 0;
+          transform: translateY(-50%);
+          left: 5%;
+        }
+  }
+  
+  .main__banner {
     max-height: 55vh;
     min-height: 30vh;
-}
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 1.6s ease-out forwards;
+  }
+  
+  .main__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 2.5rem;
+    position: relative;
+    top: -50px;
+  
+      &__title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-family: "Shrikhand", cursive;
+          font-weight: 500;
+          padding: 1.25rem;
+          width: 100%;
+          border-radius: 1.875rem 1.875rem 0 0;
+          font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+          background-color: white;
+          opacity: 0;
+          transform: translateY(-30px);
+          animation: apparition 0.4s 2s ease-out forwards;
+        }
+  
+          &heart {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 1.875rem;
+              height: 1.875rem;
+  
+              &::before {
+                  content: "\f004";
+                  font-family: "Font Awesome 5 Free";
+                  position: absolute;
+                  transition: all 0.8s ease-in-out;
+                }
+  
+                &::after {
+                  content: "\f004";
+                  font-family: "Font Awesome 5 Free";
+                  position: absolute;
+                  transition: all 0.8s ease-in-out;
+                  background: linear-gradient(to bottom, $Rose-color, $Fifth-color 80%);
+                  -webkit-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  opacity: 0;
+                  cursor: pointer;
+                }
+  
+                &:hover::before {
+                  color: transparent;
+                }
+  
+                &:hover::after {
+                  font-weight: 900;
+                  opacity: 1;
+                }
+                
+            }
+        
+  }
