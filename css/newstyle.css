@@ -308,10 +308,10 @@ img {
   content: "\f3cf";
   font-family: "FontAwesome";
   margin-left: 35px;
-  margin-right: 22pxx;
-  width: 1.875rem;
+  margin-right: 22px;
+  width: 13px;
   height: 20px;
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.3882352941);
   transition: all 0.4s ease-in-out;
 }
@@ -321,9 +321,9 @@ img {
   font-family: "FontAwesome";
   margin-left: 35px;
   margin-right: 22px;
-  width: 1.875rem;
+  width: 13px;
   height: 20px;
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.3882352941);
   transition: all 0.4s ease-in-out;
 }
@@ -333,9 +333,9 @@ img {
   font-family: "FontAwesome";
   margin-left: 35px;
   margin-right: 22px;
-  width: 1.875rem;
+  width: 13px;
   height: 20px;
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.3882352941);
   transition: all 0.4s ease-in-out;
 }
@@ -633,7 +633,8 @@ header .header__return::before {
   padding: 1.25rem;
   width: 100%;
   border-radius: 1.875rem 1.875rem 0 0;
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-size: 28px;
+  font-weight: 400;
   background-color: white;
   opacity: 0;
   transform: translateY(-30px);
@@ -705,6 +706,7 @@ header .header__return::before {
   position: relative;
   margin-bottom: 1.875rem;
   padding-left: 0.625rem;
+  font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -734,7 +736,7 @@ header .header__return::before {
   cursor: pointer;
   color: white;
   font-weight: 400;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 16px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   transition: all 0.4s ease-in-out;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
@@ -794,7 +796,7 @@ header .header__return::before {
 .meal__description p {
   overflow: hidden;
   text-overflow: ellipsis;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 15px;
   padding-left: 6px;
 }
@@ -839,22 +841,6 @@ header .header__return::before {
   transform: rotate(360deg);
 }
 
-/**
-- Taille de polices ok
-- positionnement des titres de sections (fonctionnement) ok
-- fonctionnement, la couleur du 3eme items ok
-- temps transition sur les boutons
-- hover sur liens de footer, mettre text-decoration:underline ok
-- media queries ordinateurs
-
-- animations flèches retour de restaurant
-- ellips sur titre des menu restaurant
-- enlever sur l'animations commander le box-shadow (voir le prototype)
-- media queries ordinateurs
-
-- animations lors du chargement de la page
-
-**/
 /****** Breakpoints ******/
 @media (min-width: 1024px) {
   .header {
