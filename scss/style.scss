@@ -23,28 +23,16 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2 {
-  font-size: 30px;
-  /**
-  font-weight: 500; **/
-}
-
-h3 {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
-  font-weight: 500;
+h1 { 
+  font-size: 40px;
+  font-weight: 700;
 }
 
 h4 {
   font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-p {
-  font-weight: 500;
-  font-size: 16px;
-}
-
 a {
-  font-size: clamp(1.3rem, 2vw, 0.8rem);
   text-decoration: none;
   color: inherit;
 }
@@ -183,11 +171,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1s ease-out forwards;
 
     img {
         width: 10.625rem;
         height: auto;
     }
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .fa-location-dot {
@@ -203,6 +201,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.4s ease-out forwards;
+  font-weight: 500;
 
      p::before {
          content: "\f3c5";
@@ -220,6 +222,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.8s ease-out forwards;
 
     &__title {
         animation: fillFromRight 3s ease-in-out forwards;
@@ -227,6 +232,7 @@ img {
 
       &__text {
         margin: 0.9375rem 0 2.1875rem;
+        font-size: 18px;
         font-weight: 300;
       }
 
@@ -239,7 +245,7 @@ img {
         cursor: pointer;
         color: white;
         font-weight: 400;
-        font-size: clamp(1rem, 2vw, 1.2rem);
+        font-size: 16px;
         background: linear-gradient(to bottom, $Rose-color, $Fifth-color 80%);
         transition: all 0.4s ease-in-out;
       }
@@ -247,7 +253,6 @@ img {
       &__btn:hover {
         background-color: -webkit-gradient(linear, left top, left bottom, from($Rose-color), color-stop(80%, #a16be0));
         background: linear-gradient(to bottom, $Rose-color, #a16be0 80%);
-        text-decoration: underline;
       }
       
       
@@ -269,10 +274,18 @@ img {
 
 .section__title {
   margin-bottom: 1.5625rem;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 2s ease-out forwards;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .section__content {
   width: 100%;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.4s ease-out forwards;
 }
 
 .main__process__step {
@@ -293,7 +306,8 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
 
   p {
-    font-size: 19px;
+    font-size: 16px;
+    font-weight: 500;
     width: 211px;
     height: 15px;
   }
@@ -302,10 +316,10 @@ img {
         content: "\f3cf";
         font-family: "FontAwesome";
         margin-left: 35px;
-        margin-right: 22pxx;
-        width: 1.875rem;
+        margin-right: 22px;
+        width: 13px;
         height: 20px;
-        font-size: clamp(1.3rem, 3vw, 1.8rem);
+        font-size: 20px;
         color: rgba(0, 0, 0, 0.3882352941);
         transition: all 0.4s ease-in-out;
       }
@@ -315,9 +329,9 @@ img {
             font-family: "FontAwesome";
             margin-left: 35px;
             margin-right: 22px;
-            width: 1.875rem;
+            width: 13px;
             height: 20px;
-            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-size: 20px;
             color: rgba(0, 0, 0, 0.3882352941);
             transition: all 0.4s ease-in-out;
           }
@@ -327,19 +341,19 @@ img {
                 font-family: "FontAwesome";
                 margin-left: 35px;
                 margin-right: 22px;
-                width: 1.875rem;
+                width: 13px;
                 height: 20px;
-                font-size: clamp(1.3rem, 3vw, 1.8rem);
+                font-size: 20px;
                 color: rgba(0, 0, 0, 0.3882352941);
                 transition: all 0.4s ease-in-out;
               }
 
                 &:hover:hover::after {
-                    color: #9356DC;
+                    color: $Fifth-color;
                   }
 
                   &:nth-child(3)::after {
-                    color: #9356DC;
+                    color: $Fifth-color;
                     }
 }
 
@@ -371,6 +385,9 @@ img {
 .main__restaurant {
   padding: 3.125rem 1.25rem 2.5rem;
   background-color: #f6f6f6;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.4s ease-out forwards;
 
   a {
     width: 100%;
@@ -396,6 +413,10 @@ img {
   }
   
 
+}
+.title__section {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .title__restaurant {
@@ -447,6 +468,8 @@ img {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 3px;
+    font-size: 18px;
+    font-weight: 700;
   }
 
     &__heart {
@@ -496,15 +519,27 @@ img {
   padding: 22px 25px;
   color: white;
   background-color: #333;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 2.8s ease-out forwards;
+
+    &__li {
+      font-size: 16px;
+      font-weight: 400;
+    }
 
     &__title {
         font-family: "Shrikhand", cursive;
         text-decoration: none;
         font-weight: 400;
+        font-size: 18px;
+        font-style: italic;
       }
 
         &__list {
             display: flex;
+            font-size: 16px;
+            font-weight: 500;
             gap: 10px;
 
                 &:nth-child(1)::before {
@@ -549,6 +584,9 @@ header {
   align-items: center;
   position: relative;
   height: 60px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1s ease-out forwards;
 
     &__return {
         position: absolute;
@@ -575,6 +613,9 @@ header {
 .main__banner {
   max-height: 55vh;
   min-height: 30vh;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.6s ease-out forwards;
 }
 
 .main__menu {
@@ -597,6 +638,9 @@ header {
         border-radius: 1.875rem 1.875rem 0 0;
         font-size: clamp(1.5rem, 2.5vw, 2.5rem);
         background-color: white;
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.4s 2s ease-out forwards;
       }
 
         &heart {
@@ -667,6 +711,7 @@ header {
   position: relative;
   margin-bottom: 1.875rem;
   padding-left: 0.625rem;
+  font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -696,7 +741,7 @@ header {
   cursor: pointer;
   color: white;
   font-weight: 400;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 16px;
   background: linear-gradient(to bottom, $Rose-color, $Fifth-color 80%);
   transition: all 0.4s ease-in-out;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
@@ -746,24 +791,27 @@ header {
   text-overflow: ellipsis;
   padding: 0.625rem;
 
-  h4 {
+  h3 {
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: clamp(1.4rem, 2vw, 1.9rem);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
   }
 
   p {
     overflow: hidden;
     text-overflow: ellipsis;
-    font-weight: 200;
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 300;
+    font-size: 15px;
+    padding-left: 6px;
   }
 
 }
 
 .meal__price {
   font-weight: 500;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: 15px;
   margin-left: auto;
   flex-shrink: 0;
   display: flex;
@@ -800,14 +848,6 @@ header {
 .meal:hover .meal__check::after {
   transform: rotate(360deg);
 }
-
-/**
-- temps transition sur les boutons
-- animations flèches retour de restaurant
-- ellips sur titre des menu restaurant
-- enlever sur l'animations commander le box-shadow (voir le prototype)
-**/
-
 
 /****** Breakpoints ******/
 @media (min-width: 1024px) {
