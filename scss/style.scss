@@ -754,7 +754,6 @@ header {
         box-shadow: 5px 5px 5px black;
         ***/
         background: linear-gradient(to bottom, $Rose-color, $Fifth-color 80%);
-        text-decoration: underline;
       }
       
 }
@@ -944,3 +943,17 @@ header {
     background-color: white;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+
+/*
+  - mettre une transition (par exemple, transition:linear.2s) dans les sens hover et not hover
+  - vérifier taille titre de l'accueil
+  - vérifier box shadow : box-shadow: 0px 4px 15px 0px #0000001A;
+
+  Restaurant : 
+  - mettre animation d'arrivé sur les titres restaurant en responsive
+  - le prix en weight: 700
+
+
+*/

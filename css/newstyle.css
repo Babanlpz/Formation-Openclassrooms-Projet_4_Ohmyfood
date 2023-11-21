@@ -59,7 +59,7 @@ img {
   align-items: center;
   top: 1.25rem;
   right: 1.25rem;
-  border-radius: 0.3125rem;
+  border-radius: 2px;
   padding: 0.625rem 0.9375rem;
   font-weight: 500;
   color: #278870;
@@ -190,22 +190,31 @@ img {
   margin-right: 0.9375rem;
 }
 
+.main__location__input {
+  border:none;
+  background:none;
+  font-size:16px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.4s 1.4s ease-out forwards;
+  outline: none;
+  box-shadow: none;
+}
+
 .main__location {
   height: 4.375rem;
   background-color: #EAEAEA;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: apparition 0.4s 1.4s ease-out forwards;
-  font-weight: 500;
 }
 
-.main__location p::before {
+.main__location::before {
   content: "\f3c5";
   font-family: "FontAwesome";
   margin-right: 0.9375rem;
+  padding-left: 56px;
 }
 
 .main__description {
@@ -242,12 +251,16 @@ img {
   font-weight: 500;
   font-size: 16px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
-  transition: all 0.4s ease-in-out;
+  transition: linear 2s ease-in-out;
+  -webkit-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
 }
 
 .main__description__btn:hover {
   background-color: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), color-stop(80%, #a16be0));
   background: linear-gradient(to bottom, #ff93e1, #a16be0 80%);
+  transition: linear 2s;
 }
 
 /****** Main Process ******/
@@ -294,7 +307,7 @@ img {
   cursor: pointer;
   background-color: #f6f6f6;
   transition: all 0.4s ease-in-out;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  box-shadow: 0px 4px 15px 0px #0000001A;
 }
 
 .main__process__step p {
@@ -360,7 +373,8 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-size: 14px;
+  font-weight: 500;
   color: white;
   background-color: #9356DC;
 }
@@ -400,13 +414,13 @@ img {
   overflow: hidden;
   margin: 1.25rem 0;
   color: black;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  box-shadow: 0px 4px 15px 0px #0000001A;
 }
 
 .main__restaurant a figure {
   height: 70%;
   display: flex;
-  box-pack: center;
+  box-pack: center; 
   justify-content: center;
   align-items: center;
 }
@@ -470,9 +484,8 @@ img {
 .card__info__heart {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 22px;
+  height: 21px;
   font-weight: normal;
 }
 
@@ -581,6 +594,7 @@ header {
   align-items: center;
   position: relative;
   height: 60px;
+  padding-bottom: 30px;
   opacity: 0;
   transform: translateY(-30px);
   animation: apparition 0.4s 1s ease-out forwards;
@@ -739,8 +753,8 @@ header .header__return::before {
   font-weight: 400;
   font-size: 16px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  transition: linear 2s ease-in-out;
+  box-shadow: 0px 4px 15px 0px #0000001A;
   padding: 0.9375rem 2.5rem;
   margin: 0 auto;
 }
@@ -750,12 +764,12 @@ header .header__return::before {
   box-shadow: 5px 5px 5px black;
   ***/
   background: linear-gradient(to bottom, #FF79DA, #a16be0 80%);
-  text-decoration: underline;
+  transition: linear 2s ease-in-out;
 }
 
 .meal {
   display: flex;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  box-shadow: 0px 4px 15px 0px #0000001A;
   border-radius: 0.625rem;
   margin-top: 1.25rem;
   cursor: pointer;
@@ -803,7 +817,7 @@ header .header__return::before {
 }
 
 .meal__price {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   margin-left: auto;
   flex-shrink: 0;
@@ -939,3 +953,9 @@ header .header__return::before {
     animation: apparition 0.4s 2s ease-out forwards;
   }
 }/*# sourceMappingURL=style.css.map */
+
+@media (min-width: 750px) {
+  .section__content {
+    width: 100%;
+  }
+}
