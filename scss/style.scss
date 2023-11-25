@@ -61,7 +61,7 @@ img {
          align-items: center;
          top: 1.25rem;
          right: 1.25rem;
-         border-radius: 0.3125rem;
+         border-radius: 2px;
          padding: 0.625rem 0.9375rem;
          font-weight: 500;
          color: $Second-color;
@@ -210,6 +210,19 @@ img {
          content: "\f3c5";
         font-family: "FontAwesome";
         margin-right: 0.9375rem;
+        padding-left: 56px;
+     }
+
+     &__input {
+        border:none;
+        background:none;
+        font-size:16px;
+        font-weight: 500;
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.4s 1.4s ease-out forwards;
+        outline: none;
+        box-shadow: none;
      }
 }
 
@@ -244,15 +257,19 @@ img {
         letter-spacing: 1px;
         cursor: pointer;
         color: white;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
         background: linear-gradient(to bottom, $Rose-color, $Fifth-color 80%);
         transition: all 0.4s ease-in-out;
+        -webkit-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        transition-delay: 2s;
       }
 
       &__btn:hover {
         background-color: -webkit-gradient(linear, left top, left bottom, from($Rose-color), color-stop(80%, #a16be0));
         background: linear-gradient(to bottom, $Rose-color, #a16be0 80%);
+        transition: linear 2ms;
       }
       
       
@@ -371,7 +388,8 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-size: 14px;
+  font-weight: 500;
   color: white;
   background-color: $Fifth-color;
 }
@@ -477,8 +495,9 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1.875rem;
-        height: 1.875rem;
+        width: 22px;
+        height: 21px;
+        font-weight: normal;
       }
 
         &::before {
@@ -633,11 +652,11 @@ header {
         align-items: center;
         justify-content: space-between;
         font-family: "Shrikhand", cursive;
-        font-weight: 500;
+        font-weight: 400;
         padding: 1.25rem;
         width: 100%;
         border-radius: 1.875rem 1.875rem 0 0;
-        font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+        font-size: 28px;
         background-color: white;
         opacity: 0;
         transform: translateY(-30px);
@@ -745,7 +764,7 @@ header {
   font-size: 16px;
   background: linear-gradient(to bottom, $Rose-color, $Fifth-color 80%);
   transition: all 0.4s ease-in-out;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  box-shadow:0px 4px 15px 0px #0000001A;
   padding: 0.9375rem 2.5rem;
   margin: 0 auto;
 
@@ -754,6 +773,7 @@ header {
         box-shadow: 5px 5px 5px black;
         ***/
         background: linear-gradient(to bottom, $Rose-color, $Fifth-color 80%);
+        transition: linear 2s ease-in-out;
       }
       
 }
@@ -761,7 +781,7 @@ header {
 
 .meal {
   display: flex;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  box-shadow: 0px 4px 15px 0px #0000001A;;
   border-radius: 0.625rem;
   margin-top: 1.25rem;
   cursor: pointer;
@@ -810,7 +830,7 @@ header {
 }
 
 .meal__price {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   margin-left: auto;
   flex-shrink: 0;
