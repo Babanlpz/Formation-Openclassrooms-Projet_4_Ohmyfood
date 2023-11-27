@@ -503,9 +503,9 @@ img {
   transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
-  /**
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   background-clip: text;
-  **/
   color: transparent;
   opacity: 0;
   cursor: pointer;
@@ -677,9 +677,9 @@ header .header__return::before {
   position: absolute;
   transition: all 0.8s ease-in-out;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
-  /**
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   background-clip: text;
-  **/
   color: transparent;
   opacity: 0;
   cursor: pointer;
